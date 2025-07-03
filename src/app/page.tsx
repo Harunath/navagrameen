@@ -20,15 +20,12 @@ function page() {
 	return (
 		<>
 			<Hero />
-			<Programs />
-			<Achievements />
-
-			<StayConnected />
-			<LiveStockEnergy />
-
-			<Gallery />
-
 			<News />
+			<LiveStockEnergy />
+			<Programs />
+			<Gallery />
+			<Achievements />
+			<StayConnected />
 		</>
 	);
 }

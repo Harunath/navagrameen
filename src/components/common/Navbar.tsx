@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "@/../public/logo.png";
+import Image from "next/image";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -25,13 +27,19 @@ export default function Navbar() {
 	}, []);
 
 	return (
-		<header className="bg-transparent text-black sticky top-0 z-50 backdrop-blur-md backdrop-saturate-150 shadow-lg">
+		<header className="fixed left-0 right-0 top-0 text-black z-50 backdrop-blur-3xl backdrop-saturate-150 shadow-lg">
 			<div className="w-full px-4 h-24 flex items-center justify-between">
 				{/* Logo */}
 				<Link
 					href="/"
 					className="text-lg md:text-2xl font-bold text-orange-500 hover:text-orange-600 transition">
-					NAVA GRAMEEN
+					<Image
+						src={logo}
+						className="h-30 w-auto saturate-200"
+						height={100}
+						width={100}
+						alt="NAVA GRAMEEN"
+					/>
 				</Link>
 
 				{/* Hamburger for mobile */}
@@ -99,9 +107,9 @@ export default function Navbar() {
 					</div>
 
 					<Link
-						href="/impact"
+						href="/blog"
 						className="block py-2 md:py-0 hover:text-orange-500">
-						Impact
+						Blog
 					</Link>
 					<Link
 						href="/contact"

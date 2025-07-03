@@ -4,17 +4,17 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className="h-screen w-screen bg-linear-to-b/hsl from-orange-300 from-[25%] via-white via-50% to-green-400 to-75% flex items-center justify-center">
-			<div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center">
-				<h4 className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+		<section className="min-h-screen w-screen bg-linear-to-b/hsl from-orange-300 from-[25%] via-white via-50% to-green-400 to-75% flex items-center justify-center px-4 py-8">
+			<div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center lg:pt-40 pt-[140px]">
+				<h1 className="text-3xl md:text-5xl text-center font-bold text-orange-500 uppercase tracking-widest mb-3">
 					NAVA GRAMEEN VIKAS NIRMAN SOCIETY
-				</h4>
-
-				<h1 className="text-4xl md:text-5xl font-bold text-[#001f3f] leading-tight mb-6">
-					Building Sustainable Futures for Rural India
 				</h1>
 
-				<p className="text-gray-600 text-md md:text-lg max-w-2xl mx-auto mb-10">
+				<h4 className="text-xl md:text-3xl font-bold text-[#5a6169] leading-tight mb-6">
+					Building Sustainable Futures for Rural India
+				</h4>
+
+				<p className="text-gray-800 text-md md:text-lg font-medium max-w-2xl mx-auto mb-10">
 					Empowering villages through clean energy, sustainable farming,
 					women-led initiatives, and rural employment. Together, we shape a
 					self-reliant and green Bharat.
