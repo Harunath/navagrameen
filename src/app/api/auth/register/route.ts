@@ -39,7 +39,7 @@ export async function POST(req: Request) {
 	const user = await prisma.user.create({
 		data: {
 			phone: detail.phone,
-			password: "dummy-password", // or generate later
+			password: detail.phone, // or generate later
 			referralId,
 			personalDetail: {
 				connect: { id: detail.id },

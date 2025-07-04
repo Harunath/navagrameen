@@ -1,8 +1,14 @@
 import prisma from "@/lib/prisma";
 import React from "react";
 
+import { User, PersonalDetail } from "@/lib/prisma";
+
+interface MemberType extends User {
+	personalDetail: PersonalDetail;
+}
+
 export default async function Page() {
-	const members = await prisma.user.findMany({
+	const members: MemberType[] = await prisma.user.findMany({
 		include: {
 			personalDetail: true,
 		},
