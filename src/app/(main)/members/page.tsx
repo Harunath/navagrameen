@@ -1,7 +1,7 @@
 import prisma from "@/lib/prisma";
 import React from "react";
 
-import { User, PersonalDetail } from "@/lib/prisma";
+import { User, PersonalDetail } from "@prisma/client";
 
 interface MemberType extends User {
 	personalDetail: PersonalDetail;
